@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador Financeiro</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="titulo">
+        <h1>Gerenciador Financeiro</h1>
+    </div>
+    <div id="formulario">
+        <form id="gastos-form">
+             <label for="entrada" class="form-label">Entrada:</label>
+             <input type="text" id="entrada" name="entrada">
+             <br>
+             <label for="saida" class="form-label">Saída:</label>
+             <input type="text" id="saida" name="saida">
+             <br>
+             <label for="origem" class="form-label">Origem do Gasto:</label>
+            <select id="origem" name="origem" required>
+                <option value="Streaming">Streaming</option>
+                <option value="Comida">Comida</option>
+                <option value="Mercado">Mercado</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <br>
+             <button type="submit" class="botao">Adicionar</button>
+        </form>
+    </div>
+        <div class="linha">
+            <div class="coluna-lado">
+                    <div class="resultado">
+                        <h2>Resumo</h2>
+                        <p id="total-entrada-relatorio">Total de Entrada: R$ 0,00</p>
+                        <p id="total-saida-relatorio">Total de Saída: R$ 0,00</p>
+                        <p id="saldo-relatorio">Saldo Atual: R$ 0,00</p>
+                                
+                    </div>
+             </div>
+                <div class="coluna-lado">
+                    <ul id="lista-gastos"></ul> <!-- Adicionado aqui -->
+                    <button id="ver-mais" class="botao">Ver Mais</button>
+                    <button id="relatorio" class="botao" onclick="window.location.href='relatorio.html'">Relatório</button>
+                </div>
+        </div>    
+</body>
+</html>

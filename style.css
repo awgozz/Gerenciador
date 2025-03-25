@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+}
+/* Estilo do formulário */
+#formulario{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+}
+/* Remover as setas dos campos de entrada do tipo number */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+/* Estilo do formulário de gastos */
+#gastos-form{
+    display: flex;
+    align-items:center;
+    font-size: 25px;
+    
+}
+/* Estilo dos campos de entrada */
+#entrada, #saida{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* Estilo da seção de resultados */
+.resultado{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+}
+/*Estilo da Seleção */
+#origem{
+    width: 100%;
+    padding: 10px;
+    margin-left :20px ;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+/*Edita as Letras do formulario*/
+.form-label{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#lista-gastos{
+    list-style: none;
+    width: 33,33%;
+    max-height: 200px;
+    overflow-y: hidden;
+    top:0;
+    left:0;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+    transition: max-height 0.3s ease;
+    
+}
+/* Estiiza as linhas e colunas*/
+.coluna-lado{
+    float: left;
+    width: 50%;
+}
+
+.linha::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Estilo dos botões */
+button{
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border:none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s ease;
+}
+/* Efeito de hover para os botões */
+button:hover{
+    background-color: #45a049;
+}
+
+/* Estilo do botão de ver-mais */
+#ver-mais
+{
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border:none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s ease;
+}
+
+#ver-mais:hover
+{
+    background-color: #45a049;
+}
+
+/* Estilo do botão de Relatorio */
+#relatorio
+{
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border:none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s ease;
+}
+
+#relatorio:hover
+{
+    background-color: #45a049;
+}
+
+
+/* Estilo para Dashboard */
+#resumo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+}
+/* Estilo para os graficos */
+#grafico-gastos, #grafico-origem{
+    width: 100;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+    margin: 20px;
+}
